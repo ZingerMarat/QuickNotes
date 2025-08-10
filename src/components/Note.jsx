@@ -1,9 +1,9 @@
 const categoriesColors = [
-  { value: "general", color: "#d3d3d3" }, // пастельный серый
-  { value: "personal", color: "#b2dfdb" }, // пастельный зелёный
-  { value: "work", color: "#bbdefb" }, // пастельный синий
-  { value: "ideas", color: "#b3e5fc" }, // пастельный голубой
-  { value: "study", color: "#fff9c4" }, // пастельный жёлтый
+  { value: "general", color: "#d3d3d3" },
+  { value: "personal", color: "#b2dfdb" },
+  { value: "work", color: "#bbdefb" },
+  { value: "ideas", color: "#b3e5fc" },
+  { value: "study", color: "#fff9c4" },
 ]
 
 function Note({ note, id, deleteNote }) {
