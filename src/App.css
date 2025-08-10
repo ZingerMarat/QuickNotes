@@ -1,0 +1,171 @@
+#root {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.view-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.input-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-title {
+  flex: 2;
+}
+
+.input-category {
+  flex: 1;
+  width: 100%;
+}
+
+.input-btn {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-title {
+  width: 100%;
+}
+
+.input-area {
+  width: 100%;
+  min-height: 150px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.all-notes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(11rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.note {
+  width: 11rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-date {
+  align-self: center;
+  font-size: 0.7rem;
+  color: #959595;
+}
+
+.delete-note {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s ease;
+}
+
+.delete-note:hover {
+  color: red;
+}
+
+.note-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.note-text {
+  font-size: 1rem;
+  font-weight: 500;
+
+  text-align: left;
+
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content > .input-form {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 70%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.search-input {
+  width: 60%;
+}
